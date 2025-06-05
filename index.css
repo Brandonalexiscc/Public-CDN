@@ -1,0 +1,561 @@
+:root {
+	/* Variable de color */
+	--color-gob-neutral-100: #FFFFFF;
+	--color-gob-neutral-200: #EEEEEE;
+	--color-gob-neutral-300: #CCCCCC;
+	--color-gob-neutral-400: #AAAAAA;
+	--color-gob-neutral-500: #555555;
+	--color-gob-neutral-600: #333333;
+	--color-gob-neutral-base: #333333;
+	--color-gob-neutral-shadow: #3333331F;
+	--color-gob-neutral-modal: #333333CC;
+	--color-gob-primary-100: #F1E6E7;
+	--color-gob-primary-200: #C99FA3;
+	--color-gob-primary-300: #923E46;
+	--color-gob-primary-400: #770E18;
+	--color-gob-primary-500: #5F0B13;
+	--color-gob-primary-600: #30060A;
+	--color-gob-primary-base: #770E18;
+	--color-gob-secondary-100: #E8EDE8;
+	--color-gob-secondary-200: #A3BAA3;
+	--color-gob-secondary-300: #487547;
+	--color-gob-secondary-400: #1A5319;
+	--color-gob-secondary-500: #154214;
+	--color-gob-secondary-600: #0A210A;
+	--color-gob-secondary-base: #1A5319;
+	--color-gob-tertiary-100: #F7F2EB;
+	--color-gob-tertiary-200: #E0CCB1;
+	--color-gob-tertiary-300: #C19962;
+	--color-gob-tertiary-400: #B1803B;
+	--color-gob-tertiary-500: #8E662F;
+	--color-gob-tertiary-600: #473318;
+	--color-gob-tertiary-base: #B1803B;
+
+	--color-action-info-100: #E8EEF8;
+	--color-action-info-200: #A6BDE5;
+	--color-action-info-300: #4D7BCC;
+	--color-action-info-400: #215ABF;
+	--color-action-info-500: #1A4899;
+	--color-action-info-600: #0D244C;
+	--color-action-info-base: #215ABF;
+	--color-action-success-100: #E6F5EC;
+	--color-action-success-200: #9CD8B3;
+	--color-action-success-300: #39B168;
+	--color-action-success-400: #089E42;
+	--color-action-success-500: #067E35;
+	--color-action-success-600: #033F1A;
+	--color-action-success-base: #089E42;
+	--color-action-error-100: #F8EBE8;
+	--color-action-error-200: #E5AFA6;
+	--color-action-error-300: #CC5E4D;
+	--color-action-error-400: #BF3621;
+	--color-action-error-500: #992B1A;
+	--color-action-error-600: #4C160D;
+	--color-action-error-base: #BF3621;
+	--color-action-warning-100: #F8F6E7;
+	--color-action-warning-200: #E5DDA2;
+	--color-action-warning-300: #CCBC45;
+	--color-action-warning-400: #BFAB17;
+	--color-action-warning-500: #998912;
+	--color-action-warning-600: #4C4409;
+	--color-action-warning-base: #BFAB17;
+
+	--color-brand-green: #92C020;
+	--color-brand-blue: #009F97;
+	--color-brand-light: #DCE0E0;
+	--color-brand-grey: #7A7C7F;
+	--color-brand-dark: #212529;
+
+	/* Variable vertices */
+	--radius-100: 4px;
+	--radius-200: 8px;
+	--radius-300: 12px;
+	--radius-pill: 100%;
+	--radius-base: 8px;
+
+	/* Variable trazo */
+	--stroke-100: 1px;
+	--stroke-200: 2px;
+  }
+
+/* Los estilos como botones y tablas para que sean funcionales en cuestión 
+	de ant hay que agregar algo como  .ant---  para que se tomen
+*/
+
+*{
+  font-family: 'Jost', sans-serif;
+}
+
+#root > div:first-child {
+	margin-top: 0;
+	padding-top: 0;
+}
+body {
+	padding-top: 0 !important;
+}
+hr.red {
+	margin: 10px 0 20px;
+	border-top-color: #dce0e0;
+	position: relative;
+}
+.page {
+	margin-bottom: 1em !important;
+}
+a {
+	font-weight: 500;
+	color: #646cff;
+	text-decoration: inherit;
+}
+a:hover {
+	color: #535bf2;
+}
+.radio {
+	/*  Horizontal*/
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	margin: 0;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+button:focus,
+button:focus-visible {
+	outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		color: #213547;
+		background-color: #f5f5f5;
+	}
+	a:hover {
+		color: #747bff;
+	}
+}
+
+.dropzone {
+	border: 1px dashed #235b4e;
+	border-radius: 8px;
+	padding: 1em;
+	text-align: center;
+	cursor: pointer;
+	transition: border-color 0.25s;
+}
+
+.btn-warning {
+	border: 2px solid #ffc107;
+	box-shadow: 0 0 0 0 #ffc107;
+	background-color: #fff;
+	color: #ffc107;
+}
+
+.btn-info {
+	border: 2px solid #17a2b8;
+	box-shadow: 0 0 0 0 #17a2b8;
+	background-color: #fff;
+	color: #17a2b8;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-text-fill-color: #000;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+h1.ant-typography {
+	font-size: 48px;
+	line-height: 56px;
+}
+
+h2.ant-typography {
+	font-size: 36px;
+	line-height: 44px;
+}
+
+h3.ant-typography {
+	font-size: 24px;
+	line-height: 32px;
+}
+
+h4.ant-typography {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+h5.ant-typography {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+h6.ant-typography {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+ p {
+	font-size: 16px;
+	line-height: auto;
+	font-weight: 400;
+	color: var(--color-gob-neutral-base);
+}
+
+button {
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em !important;
+  font-size: 1em;
+  font-weight: 500 !important;
+  font-family: inherit !important;
+  cursor: pointer;
+  transition: border-color 0.25s !important;
+}
+
+button:focus{
+  outline: none;
+}
+
+button.ant-btn-default {
+  border: 2px solid #6f7271;
+  box-shadow: 0 0 0 0 #6f7271;
+  background-color: #fff;
+  color: #6f7271;
+  font-weight: bolder;
+}
+
+button.ant-btn-warning {
+	border: 2px solid #ca8b03;
+	box-shadow: 0 0 0 0 #ca8b03;
+	background-color: #fff;
+	color: #ca8b03;
+	font-weight: bolder;
+}
+
+button.ant-btn-info {
+	border: 2px solid #045a67;
+	box-shadow: 0 0 0 0 #045a67;
+	background-color: #fff;
+	color: #045a67;
+	font-weight: bolder;
+}
+
+button.ant-btn-danger,
+button.ant-btn-dangerous {
+	border: 2px solid #dc3545;
+	box-shadow: 0 0 0 0 #dc3545;
+	background-color: #fff;
+	color: #dc3545;
+	font-weight: bolder;
+}
+
+button.ant-btn-success {
+	border: 2px solid #28a745;
+	box-shadow: 0 0 0 0 #28a745;
+	background-color: #fff;
+	color: #28a745;
+	font-weight: bolder;
+}
+
+button.ant-btn-reload {
+	border: 2px solid #007bff;
+	box-shadow: 0 0 0 0 #007bff;
+	background-color: #fff;
+	color: #007bff;
+	font-weight: bolder;
+}
+
+button.ant-btn-enviar {
+  border: 2px solid #611232;
+  box-shadow: 0 0 0 0 #611232;
+  background-color: #fff;
+  color: #611232;
+  font-weight: bolder;
+}
+
+/* Hovers */
+
+button.ant-btn-warning:hover {
+	/* Invertir todo */
+	border-color: #ca8b03;
+	color: #fff;
+	background-color: #ca8b03;
+}
+
+button.ant-btn-info:hover {
+	border-color: #045a67;
+	color: #fff;
+	background-color: #045a67;
+}
+
+button.ant-btn-enviar:hover {
+  border-color: #611232;
+  color: #fff;
+  background-color: #611232;
+}
+
+button.ant-btn-danger:hover,
+button.ant-btn-dangerous:hover {
+	border-color: #dc3545 !important;
+	color: #fff !important;
+	background-color: #dc3545 !important;
+}
+
+button.ant-btn-primary:hover {
+	border-color: #007bff;
+	color: #fff;
+	background-color: #007bff;
+}
+
+button.ant-btn-success:hover {
+	border-color: #28a745;
+	color: #fff;
+	background-color: #28a745;
+}
+
+button.ant-btn-reload:hover {
+	border-color: #007bff;
+	color: #fff;
+	background-color: #007bff;
+}
+
+
+button.ant-btn-new {
+  border: 2px solid #155624;
+  box-shadow: 0 0 0 0 #28a745;
+  background-color: #28a745;
+  color: #fff;
+  font-weight: bolder;
+}
+
+button.ant-btn-new:hover {
+  border-color: #28a745;
+  color: #fff;
+  background-color: #28a745;
+}
+
+.ant-tag {
+  font-size: 0.9em;
+  font-weight: bolder;
+  padding: 0.2em 0.5em;
+}
+
+.ant-table-striped .ant-table-tbody > tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.ant-table-striped .ant-table-tbody > tr:hover {
+  background-color: #f0f7ff !important;
+}
+
+/* Estilos para el modal */
+.custom-modal .ant-modal-content {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.custom-modal .ant-modal-header {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 24px;
+}
+
+.custom-modal .ant-modal-body {
+  padding: 24px;
+}
+
+/* Estilos para los botones */
+.ant-btn {
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 36px;
+  padding: 0 16px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.ant-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los inputs */
+.ant-input-affix-wrapper {
+  border-radius: 6px;
+  height: 36px;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border-radius: 6px;
+  height: 36px;
+  padding: 0 11px;
+  display: flex;
+  align-items: center;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  outline: 0;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 1.75rem auto;
+  pointer-events: none;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 0.875em;
+}
+
+.ant-btn.ant-btn-view {
+  background-color: #476de0;
+  border-color: #476de0;
+  color: #fff;
+	border: 2px solid #476de0;
+	font-weight: bolder;
+	margin-left: 3px;
+	margin-right: 3px;
+	border-radius: 9999px !important;
+}
+
+.ant-btn.ant-btn-view:hover {
+	border-color: #007bff !important;
+	color: #476de0 !important;
+	background-color: #fff !important;
+}
+
+.ant-btn-download {
+  border: 2px solid #28a745;
+  box-shadow: 0 0 0 0 #28a745;
+  background-color: #28a745;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.ant-btn-edit {
+	border: 2px solid #ffc107;
+	box-shadow: 0 0 0 0 #ffc107;
+	background-color: #ffc107;
+	color: #fff;
+	font-weight: bolder;
+	border-radius: 9999px !important;
+
+}
+
+.ant-btn-delete {
+	margin: 2px;
+	border: 2px solid #fff;
+	box-shadow: 0 0 0 0 #fff;
+	background-color: #dc3545;
+	color: #fff;
+	font-weight: bolder;
+	border-radius: 9999px !important;
+}
+
+.ant-btn-delete:hover {
+	border-color: #dc3545 !important;
+	color: #dc3545 !important;
+	background-color: #fff !important;
+	border-radius: 9999px !important;
+}
+
+.ant-btn-add {
+	margin: 2px;
+	border: 2px solid #770E18;
+	box-shadow: 0 0 0 0 #770E18;
+	background-color: #770E18;
+	color: #fff;
+	font-weight: bolder;
+	
+}
+
+.ant-btn-add:hover {
+	border-color: #770E18 !important;
+	color: #770E18 !important;
+	background-color: #fff !important;
+}
+
+.ant-btn.ant-btn-download:hover {
+  border-color: #28a745 !important;
+  color: #28a745 !important;
+  background-color: #fff !important;
+}
+
+.ant-btn.ant-btn-edit:hover {
+	border-color: #ffc107 !important;
+	color: #ffc107 !important;
+	background-color: #fff !important;
+	border-radius: 9999px !important;
+}
+.reserved-day {
+  background-color: rgba(255, 0, 0, 0.2); /* Color de sombreado */
+  border-radius: 50%;
+}
+
+
+/* Estilo para las celdas de tabla antDesign*/
+/* Para las celdas normales */
+.has-container-data td {
+  background-color: rgba(209, 250, 229, 1) !important; /* verde claro, puedes ajustar el color */
+}
+
+/* Para las celdas fijas (fixed) */
+.has-container-data .ant-table-cell-fix-left,
+.has-container-data .ant-table-cell-fix-right {
+  background-color: rgba(209, 250, 229, 1) !important;
+}
+/* Estilo para el header principal (General) */
+.ant-table-thead > tr:first-child > th {
+  background-color: #6e1423 !important; /* Color más oscuro para el header principal */
+  color: #FFFFFF !important;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Estilo para la segunda fila de headers */
+.ant-table-thead > tr:nth-child(2) > th {
+  background-color: #923e46 !important; /* Color intermedio para la segunda fila */
+  color: #FFFFFF !important;
+  font-weight: bold;
+  text-align: center;
+}
+.ant-table-thead > tr:nth-child(3) > th {
+  background-color: #b85c5c !important; /* Color más claro para la tercera fila */
+  color: #FFFFFF !important;
+  font-weight: normal;
+  text-align: center;
+}
